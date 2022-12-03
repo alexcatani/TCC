@@ -1,0 +1,250 @@
+/* Global =================  */
+
+:root {
+  /* criando variavel */
+  --white: #ffffff;
+  --orange: #ea7600;
+  --orangeOpactive: rgba(234, 118, 0, 0.7);
+  --brown: #6c6463;
+  --gray: #cfcdc9;
+  --blue: #0047bb;
+}
+
+/* selector para selecionar todas as tags */
+* {
+  margin: 0;
+  padding: 0;
+  /* medida do box, tamanho pela borda */
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dddddd;
+  color: rgba(0, 0, 0, 1);
+  display: flex;
+  margin-top: 0;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgBackground {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+}
+
+.imgBackground.active {
+  display: flex;
+}
+
+.iframeBackground {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+.iframeBackground.active {
+  display: flex;
+}
+
+.objectBackground {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+}
+
+.objectBackground.active {
+  display: flex;
+}
+
+/* Styles Menu ================= */
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  background-color: var(--white);
+  height: 100%;
+  width: 0px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.7s ease-out;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding-bottom: 15px;
+}
+
+.menu.active {
+  z-index: 1;
+  opacity: 1;
+  width: 365px;
+  visibility: visible;
+  transition: all 0.7s ease-in-out;
+}
+
+.logo.active img {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.9s ease-in-out;
+}
+
+.logo img {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 365px;
+  margin-top: 50px;
+  transition: all 1s ease-out;
+}
+
+.button-menu-fixed.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 100px;
+  left: 360px;
+  opacity: 1;
+  visibility: visible;
+  transition: left 0.7s ease-in-out;
+}
+
+.button-menu-fixed.menu img {
+  margin-top: 10px;
+  transition: transform 0.7s ease-in-out;
+  transform: rotate(0deg);
+}
+
+.button-menu-fixed {
+  display: flex;
+  width: 50px;
+  height: 100px;
+  border-top-right-radius: 45px;
+  border-bottom-right-radius: 45px;
+  background-color: var(--orange);
+  border: none;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 40%;
+  left: 0px;
+  position: absolute;
+  box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.7s ease-out;
+}
+
+.button-menu-fixed img {
+  transition: transform 0.7s ease-in-out;
+  transform: rotate(-180deg);
+}
+
+.button-menu-fixed.active {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.7s ease-in-out;
+}
+
+.button-menu:hover {
+  background-color: var(--orangeOpactive);
+}
+
+.menu-form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 90%;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.button {
+  width: 318px;
+  height: 33px;
+  background: var(--white);
+  color: var(--brown);
+  font-weight: bold;
+  font-size: 20px;
+  border: 0.5px solid #cfcdc9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button.active {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.sub-button {
+  width: 238px;
+  height: 33px;
+  background: var(--white);
+  color: var(--brown);
+  font-weight: bold;
+  font-size: 20px;
+  border: 0.5px solid #cfcdc9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sub-button.active {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.button.expanded img {
+  transition: transform 0.7s ease-in-out;
+  transform: rotate(-180deg);
+}
+
+.button:hover {
+  background-color: var(--orangeOpactive);
+}
+
+.container-sub-buttons {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.7s ease-in-out;
+}
+
+.container-sub-buttons.active {
+  height: auto;
+  transition: all 0.7s ease-in-out;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--brown);
+}

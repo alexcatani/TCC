@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/* 	
+    Efeito de sobreposição -> box-shadow: "lateral" "vertical" "espalhamento sombra" "cor da sombra" 
+    Configuração margem externa -> magin: "cima" "esqueda" "baixo" "direita" ou "Um para todos os ladoas"
+    Configuração margem interna -> padding: "cima" "esqueda" "baixo" "direita" ou "Um para todos os ladoas"
+    Posição da objeto -> position: absolute ou relative
+            absolute -> fixa a posição do objeto e deve utilizar "left" e "top" para configurar
+            relative -> torna tamanho objeto ajustável automaticamente,
+    Alinhamento do texo -> text-align: "justify"
+    Parágrafo -> text-indent: 'n'px
+*/
+
+body {
+  background-color: #dddddd;
+  color: rgba(0, 0, 0, 1);
+  margin-top: 0;
+}
+
+div#interface {
+  width: 95%;
+  position: relative;
+  background-color: #ffffff;
+  margin: -20px auto 0px auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+div#sub {
+  width: 95%;
+  position: relative;
+  background-color: #ffffff;
+  margin: -20px auto 0px auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+/* Formatação do cabeçaho */
+
+header#cabecalho {
+  border-bottom: 0px #606060 solid;
+  height: 140px;
+  margin-top: -30px;
+  background: url("../_imagens/logo_atlas_peq.jpg") no-repeat 95% 0px;
+}
+
+header#cabecalho h1 {
+  font-family: Arial, sans-serif;
+  font-size: 15pt;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  color: #606060;
+  padding: 0%;
+  padding-top: 1.5%;
+  padding-left: 2%;
+  margin-bottom: 0px;
+}
+
+/* Formatação do Menu */
+
+nav#menu {
+  display: table;
+  top: -30px;
+  width: 100%;
+  border: 0px solid black;
+  border-bottom: 0px #606060 solid;
+}
+
+nav#menu h1 {
+  display: none;
+}
+
+nav#menu ul {
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  color: #606060;
+  list-style: none;
+  position: relative;
+  top: 0px;
+  padding-bottom: 0px;
+  left: 0%;
+  border-top: 0px solid black;
+  border-bottom: 0px solid black;
+}
+
+nav#menu li {
+  display: inline-block;
+  padding: 1px;
+  margin: 0%;
+  border: 10px solid white;
+  box-shadow: 1px 1px 4px black;
+}
+
+/* Formatação do Exibição de imagens */
+
+img#imgId {
+  align-items: center;
+  height: 90%;
+  width: 95%;
+  padding-top: 0%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 0%;
+  position: absolute;
+  scrolling: no;
+}
+
+li#link {
+  padding: 0%;
+  margin: 0%;
+  border-bottom: 0px #000000;
+}
+
+ul a {
+  text-decoration: none;
+}

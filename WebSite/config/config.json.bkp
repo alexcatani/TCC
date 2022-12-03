@@ -1,0 +1,303 @@
+﻿[
+    {
+        "menu" : 1,
+        "nome" : "Produção",
+        "paineis": [
+                    {
+                             "sub_menu" : 0,
+                             "nome" : "Produção Geral ",
+                             "images": [
+                                    {
+                                          "url" : "./arquivos/Automacoes/Producao/Prod-Completo.png",
+                                          "timer": "00:20"
+                                    }
+                             ]
+                      },
+                      {
+                             "sub_menu" : 1,
+                             "nome" : "Produção TV",
+                             "images": [
+                                    {
+                                         "url" : "./arquivos/Automacoes/Producao/Prod-TV.png",
+                                         "timer": "00:30"
+                                    }
+		              ]
+	               },
+			{
+				"sub_menu" : 2,
+				"nome" : "Linha 1",
+				"images": [
+					{
+						"url" : "./arquivos/Automacoes/Linhas/LINHA-01.png",
+						"timer": "00:30"
+					}
+				]
+			},
+			{
+				"sub_menu" : 3,
+				"nome" : "Linha 2",
+				"images": [
+					{
+						"url" : "./arquivos/Automacoes/Linhas/LINHA-02.png",
+						"timer": "00:30"
+					}
+				]
+			},
+			{
+				"sub_menu" : 4,
+				"nome" : "Linha 3",
+				"images": [
+					{
+						"url" : "./arquivos/Automacoes/Linhas/LINHA-03.png",
+						"timer": "00:30"
+					}
+				]
+			},
+			{
+				"sub_menu" : 5,
+				"nome" : "Linha 4",
+				"images": [
+					{
+						"url" : "./arquivos/Automacoes/Linhas/LINHA-04.png",
+						"timer": "00:30"
+					}
+				]
+			},
+			{
+				"sub_menu" : 6,
+				"nome" : "Linha 5 - L GLASS",
+				"images": [
+					{
+						"url" : "./arquivos/Automacoes/Linhas/LINHA-05.png",
+						"timer": "00:30"
+					}
+				]
+			},
+			{
+				"sub_menu" : 7,
+				"nome" : "Linha 6",
+				"images": [
+					{
+						"url" : "./arquivos/Automacoes/Linhas/LINHA-06.png",
+						"timer": "00:30"
+					}
+				]
+			},
+			{
+				"sub_menu" : 8,
+				"nome" : "Linha Forno Elétrico",
+				"images": [
+					{
+						"url" : "./arquivos/Automacoes/Linhas/LINHA-FN.png",
+						"timer": "00:30"
+					}
+				]
+			},
+			{
+				"sub_menu" : 9,
+				"nome" : "Linha Cook Top",
+				"images": [
+					{
+						"url" : "./arquivos/Automacoes/Linhas/LINHA-COOK.png",
+						"timer": "00:30"
+					}
+				]
+			}
+        ]
+    },
+    {
+        "menu" : 2,
+        "nome" : "Painel Qualidade",
+        "paineis": [
+            {
+                "sub_menu" : 1,
+                "nome" : "Painel Qualidade",
+                "images": [
+                    {
+                        "url" : "./arquivos/Automacoes/Qualidade/Qualidade-Geral.png",
+                        "timer": "00:30"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "menu" : 3,
+        "nome" : "SESMT",
+	"oculto": false,
+        "paineis": [
+			{
+				"sub_menu" : 1,
+				"nome" : "Ocorrencias",
+				"images": [
+					{
+						"url" : "./arquivos/Automacoes/SESMT/SESMT-Ocorrencias.png",
+						"timer": "00:30"
+					}	
+				]
+			},
+			{
+				"sub_menu" : 2,
+				"nome" : "Painel 2",
+				"images": [
+					{
+						"url" : "./arquivos/Painel Virtual/SESMT/Painel2.htm",
+						"timer": "00:30"
+					}	
+				]
+			},
+			{
+				"sub_menu" : 3,
+				"nome" : "Painel 3",
+				"images": [
+					{
+						"url" : "./arquivos/Painel Virtual/SESMT/Painel3.htm",
+						"timer": "00:30"
+					}	
+				]
+			},
+			{
+				"sub_menu" : 4,
+				"nome" : "Painel 4",
+				"images": [
+					{
+						"url" : "./arquivos/Painel Virtual/SESMT/Painel4.htm",
+						"timer": "00:30"
+					}	
+				]
+			},
+			{
+				"sub_menu" : 100,
+				"nome" : "Painel_TV_SESMT",
+				"oculto" : true,
+				"images": [
+					{
+						"url" : "./arquivos/Painel Virtual/SESMT/Painel2.htm",
+						"timer": "00:10"
+					},
+					{
+						"url" : "./arquivos/Painel Virtual/SESMT/Painel3.htm",
+						"timer": "00:10"
+					},
+					{
+						"url" : "./arquivos/Painel Virtual/SESMT/Painel4.htm",
+						"timer": "00:10"
+					}	
+				]
+			}
+        ]
+    },
+    {
+        "menu" : 4,
+        "nome" : "Logistica",
+	"oculto": false,
+        "paineis": [
+			{
+				"sub_menu" : 1,
+				"nome" : "Avarias",
+				"images": [
+					{
+						"url" : "./arquivos/Painel Virtual/logistica/avaria.htm",
+						"timer": "00:30"
+					}	
+				]
+			},
+			{
+				"sub_menu" : 2,
+				"nome" : "Emb. Provisionado",
+				"images": [
+					{
+						"url" : "./arquivos/Painel Virtual/logistica/emb_provisionado.htm",
+						"timer": "00:30"
+					}
+				]
+			},
+			{
+				"sub_menu" : 3,
+				"nome" : "Faturamento",
+				"images": [
+					{
+						"url" : "./arquivos/Painel Virtual/logistica/faturamento.htm",
+						"timer": "00:30"
+					}	
+				]
+			},
+			{
+				"sub_menu" : 4,
+				"nome" : "Faturamento B2C",
+				"images": [
+					{
+						"url" : "./arquivos/Painel Virtual/logistica/faturamento_B2C.htm",
+						"timer": "00:30"
+					}	
+				]
+			},
+			{
+				"sub_menu" : 5,
+				"nome" : "NS B2C",
+				"images": [
+					{
+						"url" : "./arquivos/Painel Virtual/logistica/NS_B2C.htm",
+						"timer": "00:30"
+					}	
+				]
+			},
+			{
+				"sub_menu" : 6,
+				"nome" : "NS CF",
+				"images": [
+					{
+						"url" : "./arquivos/Painel Virtual/logistica/NS_CF.htm",
+						"timer": "00:30"
+					}	
+				]
+			},
+			{
+				"sub_menu" : 7,
+				"nome" : "NS Fracionado",
+				"images": [
+					{
+						"url" : "./arquivos/Painel Virtual/logistica/NS_Fracionado.htm",
+						"timer": "00:30"
+					}	
+				]
+			},
+			{
+				"sub_menu" : 8,
+				"nome" : "Reagenda",
+				"images": [
+					{
+						"url" : "./arquivos/Painel Virtual/logistica/reagenda.htm",
+						"timer": "00:30"
+					}	
+				]
+			}
+        ]
+    },
+	{
+        "menu" : 100,
+        "nome" : "TV Principlal",
+		"oculto": true,
+        "paineis": [
+			{
+				"sub_menu" : 1,
+				"nome" : "Painel Qualidade",
+				"images": [
+					{
+						"url" : "./arquivos/Automacoes/Producao/Prod-TV.png",
+						"timer": "00:30"
+					},			
+					{
+						"url" : "./arquivos/Automacoes/Qualidade/Qualidade-Geral.png",
+						"timer": "00:10"
+					},			
+					{
+						"url" : "./arquivos/Painel Virtual/SESMT/Doc1.pdf",
+						"timer": "00:10"
+					}
+	
+				]
+			}
+        ]
+    }
+]
